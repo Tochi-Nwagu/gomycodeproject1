@@ -1,137 +1,170 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
-
-
-
-
-
-
-
-
-
-.overall{
-    display: flex;
-    flex-direction: column;
+.overall {
+  display: flex;
+  flex-direction: column;
 }
 
-.body{
-    margin: 0;
-    padding: 0;
-    
-}
- 
-
-
-
-
-
-.navbar{
-
-    display: flex;
-    justify-content: center;
-     gap: 70px;
-     color: #707070;
-     font-family: 'Poppins', sans-serif;
-     font-size: 12px;
-    font-weight: 700;
+.body {
+  margin: 0;
+  padding: 0;
 }
 
-
-.callusbutton{
-
-   margin-left: 70px;
-   margin-top: 7px;
-   padding-top: 7px;
-   padding-bottom: 6px;
-   color: black;
-    font-size: 17px;
-    padding-left:  30px;
-    padding-right: 30px;
-    background-color: blue;
-    width: fit-content;
-    height: 25px;
-    display: flex;
-    justify-content: center;
-    border-radius: 4px ;
-    background-color: #FCBC45;
-    font-size: 15px;
-    
-
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  color: #707070;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
 }
 
-.first{
-    justify-content: center;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-   margin: 20px 30px 0px 30px;
-    height: 700px;
-    background-image: url(./professional-leader-staff-smiling-young-600nw-2063156231.webp);
-    position: relative;
+.nav_list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  list-style: none;
 }
 
-.welcomebutton{
-   
-    color: white;
-    background-color: gray;
-    width: fit-content;
-    padding: 4px 4px 4px 4px ;
-    border-radius: 2px;
-    margin-left: -1000px;
-   
+.link_item {
+  display: flex;
+  text-decoration: none;
+  color: #707070;
 }
 
-.efficientparagraph{
-    margin-left: -339px;
-    font-size: 27px;
-    font-family: 'Poppins', sans-serif;
-    width: 800px;
-    color: white;
+.chervon {
+  color: #707070;
+  padding: 5px;
 }
 
-.getaquote{
-width: fit-content;
-height: fit-content;
-padding: 15px 40px ;
-background-color: #FCBC45;
-font-size: 20px;
-border-radius: 4px;
-margin-left: -930px;
-
+.callusbutton {
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  height: 36px;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-left: 70px;
+  margin-top: 7px;
+  color: black;
+  font-size: 17px;
+  padding: 10px;
+  background-color: blue;
+  border: transparent;
+  border-radius: 4px;
+  background-color: #fcbc45;
 }
-.quotetext{
-   margin-top: -45px;
-    display: flex;
-    font-size: 19px;
-    color: white;
-    width: 400px;
-    margin-left: -200px;
+.icon1 {
+  padding-right: 10px;
+}
+/* Adding hover effect tothe callusbutton */
+
+.first {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  margin: 20px 30px 0px 30px;
+  height: 700px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/professional-leader-staff-smiling-young-600nw-2063156231.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  object-fit: cover;
+  box-shadow: -1px 14px 0px 0px rgba(253, 188, 70, 0.75);
 }
 
-.second{
-    width: 1180px;
-    height: 270px;
-    background-color: #F2F2F4;
-    border-radius: 8px;
-    margin-top: 800px;
-    position: absolute;
-   z-index: 10;
-   
-   
+.welcomebutton {
+  color: white;
+  background-color: gray;
+  width: fit-content;
+  padding: 4px 4px 4px 4px;
+  border-radius: 2px;
+  margin-left: -1000px;
 }
 
-.third{
-    display: flex;
-    justify-content: center;
-    
-   
-    margin-top: 300px;
-   
+.efficientparagraph {
+  margin-left: -339px;
+  font-size: 27px;
+  font-family: 'Poppins', sans-serif;
+  width: 800px;
+  color: white;
 }
 
-.aboutimage{
-    border-radius: 8px;
+.getaquote {
+  width: fit-content;
+  height: fit-content;
+  padding: 15px 40px;
+  background-color: #fcbc45;
+  font-size: 20px;
+  border-radius: 4px;
+  margin-left: -930px;
+}
+.quotetext {
+  margin-top: -45px;
+  display: flex;
+  font-size: 19px;
+  color: white;
+  width: 400px;
+  margin-left: -200px;
+}
 
-    
+.second {
+  width: 1180px;
+  height: 300px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-top: 800px;
+  position: absolute;
+  z-index: 10;
+}
+
+.icon2,
+.ratings {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+}
+.icons {
+  font-size: 48px;
+  color: #fcbc46;
+}
+.rating {
+  position: relative;
+  text-align: center;
+}
+
+.numbers {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+.la-plus {
+  font-size: 14px;
+  color: #fcbc46;
+  position: absolute;
+  top: 5;
+  right: 5;
+  transform: translateX(50%);
+}
+.rating_text {
+  color: #989898;
+  margin-top: 0%;
+}
+
+.third {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 300px;
+}
+
+.aboutimage {
+  border-radius: 8px;
 }
